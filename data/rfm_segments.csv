@@ -1,0 +1,351 @@
+Customer_ID,Recency,Frequency,Monetary,R_Score,F_Score,M_Score,RFM_Score,Segment
+101,25,14,1120.2,3,4,4,11,Potential Loyalists
+102,18,11,780.5,4,2,3,9,Potential Loyalists
+103,42,9,510.75,1,1,2,4,Hibernating
+104,12,19,1480.3,5,5,5,15,Champions
+105,55,13,720.4,1,3,3,7,Needs Attention
+106,22,8,440.8,3,1,1,5,Promising
+107,28,15,1150.6,2,4,4,10,At Risk
+108,14,12,800.9,5,3,3,11,Loyal Customers
+109,40,10,495.25,1,2,2,5,Hibernating
+110,9,21,1520.1,5,5,5,15,Champions
+111,34,11,690.3,2,3,2,7,Needs Attention
+112,20,7,470.5,4,1,1,6,New Customers
+113,21,16,1200.8,3,4,5,12,Potential Loyalists
+114,15,13,820.75,4,3,4,11,Loyal Customers
+115,38,9,530.4,2,1,2,5,About to Sleep
+116,11,18,1360.2,5,5,5,15,Champions
+117,48,12,700.6,1,3,3,7,Needs Attention
+118,25,8,450.9,3,1,1,5,Promising
+119,29,14,1170.3,2,4,4,10,At Risk
+120,16,11,790.2,4,3,3,10,Loyal Customers
+121,41,10,505.75,1,2,2,5,Hibernating
+122,13,20,1470.5,5,5,5,15,Champions
+123,54,13,710.4,1,3,3,7,Needs Attention
+124,23,7,430.8,3,1,1,5,Promising
+125,27,15,1140.6,3,4,4,11,Potential Loyalists
+126,13,12,810.9,5,3,3,11,Loyal Customers
+127,39,9,485.25,2,1,1,4,About to Sleep
+128,10,21,1500.1,5,5,5,15,Champions
+129,33,10,670.3,2,2,2,6,About to Sleep
+130,19,8,460.5,4,1,1,6,New Customers
+131,20,16,1190.8,4,4,4,12,Loyal Customers
+132,14,13,830.75,5,3,4,12,Loyal Customers
+133,37,9,520.4,2,1,2,5,About to Sleep
+134,10,18,1370.2,5,5,5,15,Champions
+135,47,12,690.6,1,3,3,7,Needs Attention
+136,24,8,440.9,3,1,1,5,Promising
+137,22,14,1160.3,3,4,4,11,Potential Loyalists
+138,17,11,800.2,4,3,3,10,Loyal Customers
+139,40,10,500.75,1,2,2,5,Hibernating
+140,12,20,1460.5,5,5,5,15,Champions
+141,53,13,700.4,1,3,3,7,Needs Attention
+142,21,7,420.8,3,1,1,5,Promising
+143,26,15,1130.6,3,4,4,11,Potential Loyalists
+144,12,12,820.9,5,3,4,12,Loyal Customers
+145,38,9,480.25,2,1,1,4,About to Sleep
+146,9,21,1490.1,5,5,5,15,Champions
+147,32,10,680.3,2,2,2,6,About to Sleep
+148,18,8,470.5,4,1,1,6,New Customers
+149,19,16,1180.8,4,4,4,12,Loyal Customers
+150,15,11,790.2,4,3,3,10,Loyal Customers
+151,39,10,505.75,2,2,2,6,About to Sleep
+152,13,20,1470.5,5,5,5,15,Champions
+153,54,13,710.4,1,3,3,7,Needs Attention
+154,23,7,430.8,3,1,1,5,Promising
+155,27,15,1140.6,3,4,4,11,Potential Loyalists
+156,13,12,810.9,5,3,3,11,Loyal Customers
+157,39,9,485.25,2,1,2,5,About to Sleep
+158,10,21,1500.1,5,5,5,15,Champions
+159,33,10,670.3,2,2,2,6,About to Sleep
+160,19,8,460.5,4,1,1,6,New Customers
+161,20,16,1190.8,4,4,4,12,Loyal Customers
+162,14,13,830.75,5,3,4,12,Loyal Customers
+163,37,9,520.4,2,1,2,5,About to Sleep
+164,10,18,1370.2,5,5,5,15,Champions
+165,47,12,690.6,1,3,3,7,Needs Attention
+166,24,8,440.9,3,1,1,5,Promising
+167,22,14,1160.3,3,4,4,11,Potential Loyalists
+168,17,11,800.2,4,3,3,10,Loyal Customers
+169,40,10,500.75,1,2,2,5,Hibernating
+170,12,20,1460.5,5,5,5,15,Champions
+171,53,13,700.4,1,3,3,7,Needs Attention
+172,21,7,420.8,3,1,1,5,Promising
+173,26,15,1130.6,3,4,4,11,Potential Loyalists
+174,12,12,820.9,5,3,4,12,Loyal Customers
+175,38,9,480.25,2,1,1,4,About to Sleep
+176,9,21,1490.1,5,5,5,15,Champions
+177,32,10,680.3,2,2,2,6,About to Sleep
+178,18,8,470.5,4,1,1,6,New Customers
+179,19,16,1180.8,4,4,4,12,Loyal Customers
+180,15,11,790.2,4,3,3,10,Loyal Customers
+181,39,10,505.75,2,2,2,6,About to Sleep
+182,13,20,1470.5,5,5,5,15,Champions
+183,54,13,710.4,1,3,3,7,Needs Attention
+184,23,7,430.8,3,1,1,5,Promising
+185,27,15,1140.6,3,4,4,11,Potential Loyalists
+186,13,12,810.9,5,3,3,11,Loyal Customers
+187,39,9,485.25,2,1,2,5,About to Sleep
+188,10,21,1500.1,5,5,5,15,Champions
+189,33,10,670.3,2,2,2,6,About to Sleep
+190,19,8,460.5,4,1,1,6,New Customers
+191,20,16,1190.8,4,4,4,12,Loyal Customers
+192,14,13,830.75,5,3,4,12,Loyal Customers
+193,37,9,520.4,2,1,2,5,About to Sleep
+194,10,18,1370.2,5,5,5,15,Champions
+195,47,12,690.6,1,3,3,7,Needs Attention
+196,24,8,440.9,3,1,1,5,Promising
+197,22,14,1160.3,3,4,4,11,Potential Loyalists
+198,17,11,800.2,4,3,3,10,Loyal Customers
+199,40,10,500.75,1,2,2,5,Hibernating
+200,12,20,1460.5,5,5,5,15,Champions
+201,53,13,700.4,1,4,3,8,Needs Attention
+202,21,7,420.8,3,1,1,5,Promising
+203,26,15,1130.6,3,4,4,11,Potential Loyalists
+204,12,12,820.9,5,3,4,12,Loyal Customers
+205,38,9,480.25,2,1,1,4,About to Sleep
+206,9,21,1490.1,5,5,5,15,Champions
+207,32,10,680.3,2,2,2,6,About to Sleep
+208,18,8,470.5,4,1,1,6,New Customers
+209,19,16,1180.8,4,4,4,12,Loyal Customers
+210,15,11,790.2,4,3,3,10,Loyal Customers
+211,39,10,505.75,2,2,2,6,About to Sleep
+212,13,20,1470.5,5,5,5,15,Champions
+213,54,13,710.4,1,4,3,8,Needs Attention
+214,23,7,430.8,3,1,1,5,Promising
+215,27,15,1140.6,3,4,4,11,Potential Loyalists
+216,13,12,810.9,5,3,3,11,Loyal Customers
+217,39,9,485.25,2,1,2,5,About to Sleep
+218,10,21,1500.1,5,5,5,15,Champions
+219,33,10,670.3,2,2,2,6,About to Sleep
+220,19,8,460.5,4,1,1,6,New Customers
+221,20,16,1190.8,4,4,4,12,Loyal Customers
+222,14,13,830.75,5,4,4,13,Champions
+223,37,9,520.4,2,2,2,6,About to Sleep
+224,10,18,1370.2,5,5,5,15,Champions
+225,47,12,690.6,1,3,3,7,Needs Attention
+226,24,8,440.9,3,1,1,5,Promising
+227,22,14,1160.3,3,4,4,11,Potential Loyalists
+228,17,11,800.2,4,3,3,10,Loyal Customers
+229,40,10,500.75,1,2,2,5,Hibernating
+230,12,20,1460.5,5,5,5,15,Champions
+231,53,13,700.4,1,4,3,8,Needs Attention
+232,21,7,420.8,3,1,1,5,Promising
+233,26,15,1130.6,3,4,4,11,Potential Loyalists
+234,12,12,820.9,5,3,4,12,Loyal Customers
+235,38,9,480.25,2,2,1,5,About to Sleep
+236,9,21,1490.1,5,5,5,15,Champions
+237,32,10,680.3,2,2,2,6,About to Sleep
+238,18,8,470.5,4,1,1,6,New Customers
+239,19,16,1180.8,4,4,4,12,Loyal Customers
+240,15,11,790.2,4,3,3,10,Loyal Customers
+241,39,10,505.75,2,2,2,6,About to Sleep
+242,13,20,1470.5,5,5,5,15,Champions
+243,54,13,710.4,1,4,3,8,Needs Attention
+244,23,7,430.8,3,1,1,5,Promising
+245,26,15,1130.6,3,4,4,11,Potential Loyalists
+246,12,12,820.9,5,3,4,12,Loyal Customers
+247,38,9,480.25,2,2,1,5,About to Sleep
+248,9,21,1490.1,5,5,5,15,Champions
+249,32,10,680.3,2,2,2,6,About to Sleep
+250,18,8,470.5,4,1,1,6,New Customers
+251,19,16,1180.8,4,4,4,12,Loyal Customers
+252,15,11,790.2,4,3,3,10,Loyal Customers
+253,39,10,505.75,2,2,2,6,About to Sleep
+254,13,20,1470.5,5,5,5,15,Champions
+255,54,13,710.4,1,4,3,8,Needs Attention
+256,23,7,430.8,3,1,1,5,Promising
+257,27,15,1140.6,3,4,4,11,Potential Loyalists
+258,13,12,810.9,5,3,4,12,Loyal Customers
+259,39,9,485.25,2,2,2,6,About to Sleep
+260,10,21,1500.1,5,5,5,15,Champions
+261,33,10,670.3,2,2,2,6,About to Sleep
+262,19,8,460.5,4,1,1,6,New Customers
+263,20,16,1190.8,4,4,4,12,Loyal Customers
+264,14,13,830.75,5,4,4,13,Champions
+265,37,9,520.4,2,2,2,6,About to Sleep
+266,10,18,1370.2,5,5,5,15,Champions
+267,47,12,690.6,1,3,3,7,Needs Attention
+268,24,8,440.9,3,1,1,5,Promising
+269,22,14,1160.3,3,4,4,11,Potential Loyalists
+270,17,11,800.2,4,3,3,10,Loyal Customers
+271,40,10,500.75,1,2,2,5,Hibernating
+272,12,20,1460.5,5,5,5,15,Champions
+273,53,13,700.4,1,4,3,8,Needs Attention
+274,23,7,430.8,3,1,1,5,Promising
+275,27,15,1140.6,3,4,4,11,Potential Loyalists
+276,12,12,820.9,5,3,4,12,Loyal Customers
+277,38,9,480.25,2,2,1,5,About to Sleep
+278,9,21,1490.1,5,5,5,15,Champions
+279,32,10,680.3,2,2,2,6,About to Sleep
+280,18,8,470.5,4,1,1,6,New Customers
+281,19,16,1180.8,4,4,4,12,Loyal Customers
+282,15,11,790.2,4,3,3,10,Loyal Customers
+283,39,10,505.75,2,2,2,6,About to Sleep
+284,13,20,1470.5,5,5,5,15,Champions
+285,54,13,710.4,1,4,3,8,Needs Attention
+286,23,7,430.8,3,1,1,5,Promising
+287,26,15,1130.6,3,4,4,11,Potential Loyalists
+288,13,12,820.9,5,3,4,12,Loyal Customers
+289,39,9,485.25,2,2,2,6,About to Sleep
+290,10,21,1500.1,5,5,5,15,Champions
+291,33,10,670.3,2,2,2,6,About to Sleep
+292,19,8,460.5,4,1,1,6,New Customers
+293,20,16,1190.8,4,4,5,13,Champions
+294,14,13,830.75,5,4,4,13,Champions
+295,37,9,520.4,2,2,2,6,About to Sleep
+296,10,18,1370.2,5,5,5,15,Champions
+297,47,12,690.6,1,3,3,7,Needs Attention
+298,24,8,440.9,3,1,1,5,Promising
+299,22,14,1160.3,3,4,4,11,Potential Loyalists
+300,17,11,800.2,4,3,3,10,Loyal Customers
+301,11,19,1420.8,5,5,5,15,Champions
+302,50,14,730.4,1,4,3,8,Needs Attention
+303,21,7,450.6,3,1,1,5,Promising
+304,18,17,1210.6,4,5,5,14,Champions
+305,16,11,780.9,4,3,3,10,Loyal Customers
+306,35,10,495.25,2,2,2,6,About to Sleep
+307,9,18,1390.2,5,5,5,15,Champions
+308,46,12,670.6,1,3,2,6,Needs Attention
+309,25,8,460.9,3,1,1,5,Promising
+310,21,14,1170.3,3,4,4,11,Potential Loyalists
+311,14,11,810.2,5,3,3,11,Loyal Customers
+312,38,9,515.75,2,2,2,6,About to Sleep
+313,12,20,1450.5,5,5,5,15,Champions
+314,52,13,690.4,1,4,3,8,Needs Attention
+315,24,7,420.8,3,1,1,5,Promising
+316,26,15,1130.6,3,4,4,11,Potential Loyalists
+317,13,12,820.9,5,3,4,12,Loyal Customers
+318,39,9,480.25,2,2,1,5,About to Sleep
+319,9,21,1490.1,5,5,5,15,Champions
+320,32,10,680.3,2,2,2,6,About to Sleep
+321,18,8,470.5,4,1,1,6,New Customers
+322,19,16,1180.8,4,5,4,13,Champions
+323,15,11,790.2,4,3,3,10,Loyal Customers
+324,39,10,505.75,2,2,2,6,About to Sleep
+325,13,20,1470.5,5,5,5,15,Champions
+326,54,13,710.4,1,4,3,8,Needs Attention
+327,23,7,430.8,3,1,1,5,Promising
+328,27,15,1140.6,3,4,4,11,Potential Loyalists
+329,13,12,820.9,5,3,4,12,Loyal Customers
+330,39,9,485.25,2,2,2,6,About to Sleep
+331,10,21,1500.1,5,5,5,15,Champions
+332,33,10,670.3,2,2,2,6,About to Sleep
+333,19,8,460.5,4,1,1,6,New Customers
+334,20,16,1190.8,4,5,5,14,Champions
+335,14,13,830.75,5,4,4,13,Champions
+336,37,9,520.4,2,2,2,6,About to Sleep
+337,10,18,1370.2,5,5,5,15,Champions
+338,47,12,690.6,1,3,3,7,Needs Attention
+339,24,8,440.9,3,1,1,5,Promising
+340,22,14,1160.3,3,4,4,11,Potential Loyalists
+341,17,11,800.2,4,3,3,10,Loyal Customers
+342,40,9,525.75,1,2,2,5,Hibernating
+343,11,20,1460.5,5,5,5,15,Champions
+344,55,13,720.4,1,4,3,8,Needs Attention
+345,25,7,440.8,3,1,1,5,Promising
+346,28,15,1150.6,2,4,4,10,At Risk
+347,14,12,830.9,5,3,4,12,Loyal Customers
+348,40,9,490.25,1,2,2,5,Hibernating
+349,10,21,1480.1,5,5,5,15,Champions
+350,34,10,690.3,2,2,3,7,Needs Attention
+351,20,8,480.5,4,1,1,6,New Customers
+352,21,16,1170.8,3,5,4,12,Potential Loyalists
+353,15,11,790.2,4,3,3,10,Loyal Customers
+354,41,10,510.75,1,2,2,5,Hibernating
+355,12,19,1440.5,5,5,5,15,Champions
+356,56,13,700.4,1,4,3,8,Needs Attention
+357,26,7,410.8,3,1,1,5,Promising
+358,29,15,1160.6,2,4,4,10,At Risk
+359,14,12,810.9,5,3,4,12,Loyal Customers
+360,41,9,495.25,1,2,2,5,Hibernating
+361,10,21,1490.1,5,5,5,15,Champions
+362,35,10,660.3,2,2,2,6,About to Sleep
+363,21,8,430.5,3,1,1,5,Promising
+364,22,16,1200.8,3,5,5,13,Champions
+365,16,11,780.2,4,3,3,10,Loyal Customers
+366,42,10,505.75,1,2,2,5,Hibernating
+367,13,20,1460.5,5,5,5,15,Champions
+368,57,13,710.4,1,4,3,8,Needs Attention
+369,24,7,450.8,3,1,1,5,Promising
+370,30,15,1140.6,2,4,4,10,At Risk
+371,17,12,800.9,4,3,3,10,Loyal Customers
+372,42,9,475.25,1,2,1,4,Hibernating
+373,11,21,1480.1,5,5,5,15,Champions
+374,36,10,660.3,2,2,2,6,About to Sleep
+375,22,8,470.5,3,1,1,5,Promising
+376,23,16,1190.8,3,5,5,13,Champions
+377,18,11,770.2,4,3,3,10,Loyal Customers
+378,43,10,515.75,1,2,2,5,Hibernating
+379,12,19,1450.5,5,5,5,15,Champions
+380,58,13,710.4,1,4,3,8,Needs Attention
+381,27,7,430.8,3,1,1,5,Promising
+382,31,15,1160.6,2,4,4,10,At Risk
+383,15,12,820.9,4,3,4,11,Loyal Customers
+384,43,9,495.25,1,2,2,5,Hibernating
+385,10,21,1490.1,5,5,5,15,Champions
+386,37,10,660.3,2,2,2,6,About to Sleep
+387,23,8,440.5,3,1,1,5,Promising
+388,24,16,1200.8,3,5,5,13,Champions
+389,16,11,780.2,4,3,3,10,Loyal Customers
+390,44,10,505.75,1,2,2,5,Hibernating
+391,13,20,1460.5,5,5,5,15,Champions
+392,59,13,710.4,1,4,3,8,Needs Attention
+393,28,7,450.8,2,1,1,4,About to Sleep
+394,32,15,1140.6,2,4,4,10,At Risk
+395,17,12,800.9,4,3,3,10,Loyal Customers
+396,44,9,475.25,1,2,1,4,Hibernating
+397,12,21,1480.1,5,5,5,15,Champions
+398,38,10,660.3,2,2,2,6,About to Sleep
+399,22,8,470.5,3,1,1,5,Promising
+400,25,16,1190.8,3,5,5,13,Champions
+401,18,11,800.2,4,3,3,10,Loyal Customers
+402,45,10,515.75,1,2,2,5,Hibernating
+403,13,19,1450.5,5,5,5,15,Champions
+404,60,13,710.4,1,4,3,8,Needs Attention
+405,29,7,430.8,2,1,1,4,About to Sleep
+406,33,15,1160.6,2,4,4,10,At Risk
+407,16,12,820.9,4,3,4,11,Loyal Customers
+408,45,9,495.25,1,2,2,5,Hibernating
+409,11,21,1490.1,5,5,5,15,Champions
+410,39,10,660.3,2,2,2,6,About to Sleep
+411,24,8,440.5,3,1,1,5,Promising
+412,25,16,1200.8,3,5,5,13,Champions
+413,17,11,780.2,4,3,3,10,Loyal Customers
+414,46,10,505.75,1,2,2,5,Hibernating
+415,14,20,1460.5,5,5,5,15,Champions
+416,61,13,710.4,1,4,3,8,Needs Attention
+417,30,7,450.8,2,1,1,4,About to Sleep
+418,34,15,1140.6,2,4,4,10,At Risk
+419,19,12,800.9,4,3,3,10,Loyal Customers
+420,46,9,475.25,1,2,1,4,Hibernating
+421,12,21,1480.1,5,5,5,15,Champions
+422,40,10,660.3,1,2,2,5,Hibernating
+423,26,8,470.5,3,1,1,5,Promising
+424,27,16,1190.8,3,5,5,13,Champions
+425,18,11,780.2,4,3,3,10,Loyal Customers
+426,47,10,515.75,1,2,2,5,Hibernating
+427,14,19,1450.5,5,5,5,15,Champions
+428,62,13,710.4,1,4,3,8,Needs Attention
+429,31,7,430.8,2,1,1,4,About to Sleep
+430,35,15,1160.6,2,4,4,10,At Risk
+431,20,12,820.9,4,3,4,11,Loyal Customers
+432,47,9,495.25,1,2,2,5,Hibernating
+433,11,21,1490.1,5,5,5,15,Champions
+434,41,10,660.3,1,2,2,5,Hibernating
+435,28,8,440.5,2,1,1,4,About to Sleep
+436,28,16,1200.8,2,5,5,12,At Risk
+437,19,11,780.2,4,3,3,10,Loyal Customers
+438,48,10,505.75,1,2,2,5,Hibernating
+439,15,20,1460.5,4,5,5,14,Champions
+440,63,13,710.4,1,4,3,8,Needs Attention
+441,32,7,450.8,2,1,1,4,About to Sleep
+442,36,15,1140.6,2,4,4,10,At Risk
+443,20,12,800.9,4,3,3,10,Loyal Customers
+444,48,9,475.25,1,2,1,4,Hibernating
+445,13,21,1480.1,5,5,5,15,Champions
+446,42,10,660.3,1,2,2,5,Hibernating
+447,27,8,470.5,3,1,1,5,Promising
+448,28,16,1190.8,2,5,5,12,At Risk
+449,21,11,780.2,3,3,3,9,Potential Loyalists
+450,49,10,515.75,1,2,2,5,Hibernating

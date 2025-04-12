@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Customer Behavior Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .header {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .viz-card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        .viz-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+            margin: 30px 0 20px 0;
+        }
+        .insight-card {
+            border-left: 4px solid #28a745;
+            background-color: #f8f9fa;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #007bff;
+        }
+        .tab-content {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header text-center">
+        <div class="container">
+            <h1 class="display-4">E-commerce Customer Behavior Analysis</h1>
+            <p class="lead">Interactive dashboard showcasing customer segmentation and spending patterns</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Project Overview</h2>
+                        <p>This analysis explores customer behavior patterns in an e-commerce platform using a comprehensive dataset of customer interactions and transactions. The dashboard provides insights into customer spending habits, segmentation, satisfaction levels, and demographic patterns to help businesses make data-driven decisions.</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <div class="card text-center bg-light">
+                                    <div class="card-body">
+                                        <h5 class="card-title">350</h5>
+                                        <p class="card-text">Customers Analyzed</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card text-center bg-light">
+                                    <div class="card-body">
+                                        <h5 class="card-title">9</h5>
+                                        <p class="card-text">Customer Segments</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card text-center bg-light">
+                                    <div class="card-body">
+                                        <h5 class="card-title">$845.38</h5>
+                                        <p class="card-text">Average Customer Spend</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-demographics-tab" data-bs-toggle="pill" data-bs-target="#pills-demographics" type="button" role="tab" aria-controls="pills-demographics" aria-selected="true">Demographics</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-spending-tab" data-bs-toggle="pill" data-bs-target="#pills-spending" type="button" role="tab" aria-controls="pills-spending" aria-selected="false">Spending Patterns</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-segments-tab" data-bs-toggle="pill" data-bs-target="#pills-segments" type="button" role="tab" aria-controls="pills-segments" aria-selected="false">Customer Segments</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-satisfaction-tab" data-bs-toggle="pill" data-bs-target="#pills-satisfaction" type="button" role="tab" aria-controls="pills-satisfaction" aria-selected="false">Satisfaction</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-clusters-tab" data-bs-toggle="pill" data-bs-target="#pills-clusters" type="button" role="tab" aria-controls="pills-clusters" aria-selected="false">Clustering</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Demographics Tab -->
+            <div class="tab-pane fade show active" id="pills-demographics" role="tabpanel" aria-labelledby="pills-demographics-tab">
+                <h3 class="section-title">Customer Demographics</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Age Distribution</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/age_distribution.png" alt="Age Distribution" class="img-fluid">
+                                <p class="mt-3">Distribution of customer ages shows concentration in the 25-45 age range.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Top Cities by Spending</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/top_cities_by_spending.png" alt="Top Cities by Spending" class="img-fluid">
+                                <p class="mt-3">San Francisco and New York show significantly higher total spending.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="card insight-card">
+                            <div class="card-body">
+                                <h5>Key Demographic Insights</h5>
+                                <ul>
+                                    <li>San Francisco customers spend the most on average ($1,459.77), followed by New York ($1,165.04)</li>
+                                    <li>Male customers spend more on average ($986.93) compared to female customers ($703.83)</li>
+                                    <li>There's a negative correlation between age and spending (-0.68), suggesting younger customers tend to spend more</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spending Patterns Tab -->
+            <div class="tab-pane fade" id="pills-spending" role="tabpanel" aria-labelledby="pills-spending-tab">
+                <h3 class="section-title">Spending Patterns</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Spending by Gender</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/spending_by_gender.png" alt="Spending by Gender" class="img-fluid">
+                                <p class="mt-3">Male customers show higher average spending compared to female customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Spending by Membership Type</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/spending_by_membership.png" alt="Spending by Membership Type" class="img-fluid">
+                                <p class="mt-3">Gold members spend significantly more than Silver and Bronze members.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Age vs Spending</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/age_vs_spending.png" alt="Age vs Spending" class="img-fluid">
+                                <p class="mt-3">Negative correlation between age and spending, with younger customers spending more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Spending by Discount Status</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/spending_by_discount.png" alt="Spending by Discount Status" class="img-fluid">
+                                <p class="mt-3">Customers without discounts actually spend more on average than those with discounts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="card insight-card">
+                            <div class="card-body">
+                                <h5>Key Spending Insights</h5>
+                                <ul>
+                                    <li>Gold members spend 75% more than Silver members and 177% more than Bronze members</li>
+                                    <li>Customers without discounts spend 15% more on average than those with discounts</li>
+                                    <li>Satisfied customers spend more than twice as much as neutral or unsatisfied customers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Segments Tab -->
+            <div class="tab-pane fade" id="pills-segments" role="tabpanel" aria-labelledby="pills-segments-tab">
+                <h3 class="section-title">Customer Segmentation (RFM Analysis)</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">RFM Segment Distribution</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/rfm_segments_distribution.png" alt="RFM Segment Distribution" class="img-fluid">
+                                <p class="mt-3">Distribution of customers across different RFM segments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Spending by Segment</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/spending_by_segment.png" alt="Spending by Segment" class="img-fluid">
+                                <p class="mt-3">Champions and Loyal Customers have the highest average spending.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">RFM Segment Descriptions</div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Segment</th>
+                                                <th>Description</th>
+                                                <th>Avg. Spend</th>
+                                                <th>Recency (Days)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Champions</td>
+                                                <td>Recent customers who buy often and spend the most</td>
+                                                <td>$1,388.02</td>
+                                                <td>12.88</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Loyal Customers</td>
+                                                <td>Regular buyers with good spending patterns</td>
+                                                <td>$869.99</td>
+                                                <td>15.94</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Potential Loyalists</td>
+                                                <td>Recent customers with average frequency and spending</td>
+                                                <td>$1,120.12</td>
+                                                <td>24.15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>At Risk</td>
+                                                <td>Previous loyal customers who haven't purchased recently</td>
+                                                <td>$1,159.07</td>
+                                                <td>30.85</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hibernating</td>
+                                                <td>Customers who made few purchases and haven't returned</td>
+                                                <td>$516.37</td>
+                                                <td>42.90</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Satisfaction Tab -->
+            <div class="tab-pane fade" id="pills-satisfaction" role="tabpanel" aria-labelledby="pills-satisfaction-tab">
+                <h3 class="section-title">Customer Satisfaction Analysis</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Satisfaction Level Distribution</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/satisfaction_distribution.png" alt="Satisfaction Distribution" class="img-fluid">
+                                <p class="mt-3">Distribution of customers across satisfaction levels.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Rating by Satisfaction Level</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/rating_by_satisfaction.png" alt="Rating by Satisfaction" class="img-fluid">
+                                <p class="mt-3">Clear correlation between satisfaction level and average rating.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Days Since Purchase by Satisfaction</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/days_since_purchase_by_satisfaction.png" alt="Days Since Purchase by Satisfaction" class="img-fluid">
+                                <p class="mt-3">Unsatisfied customers have longer periods since their last purchase.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Correlation Matrix</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/correlation_matrix.png" alt="Correlation Matrix" class="img-fluid">
+                                <p class="mt-3">Correlation between key metrics including satisfaction indicators.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="card insight-card">
+                            <div class="card-body">
+                                <h5>Key Satisfaction Insights</h5>
+                                <ul>
+                                    <li>Satisfied customers have an average rating of 4.7 compared to 3.4 for unsatisfied customers</li>
+                                    <li>Unsatisfied customers haven't made a purchase in 43 days on average, compared to 18 days for satisfied customers</li>
+                                    <li>Satisfied customers spend 115% more than unsatisfied customers ($1,280.32 vs $595.14)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clustering Tab -->
+            <div class="tab-pane fade" id="pills-clusters" role="tabpanel" aria-labelledby="pills-clusters-tab">
+                <h3 class="section-title">K-means Clustering Analysis</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Silhouette Scores</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/kmeans_silhouette_scores.png" alt="Silhouette Scores" class="img-fluid">
+                                <p class="mt-3">Optimal number of clusters determined to be 7 based on silhouette scores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Clusters: Age vs Spend</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/clusters_age_vs_spend.png" alt="Clusters: Age vs Spend" class="img-fluid">
+                                <p class="mt-3">Customer clusters based on age and total spend.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Clusters: Items vs Rating</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/clusters_items_vs_rating.png" alt="Clusters: Items vs Rating" class="img-fluid">
+                                <p class="mt-3">Customer clusters based on items purchased and average rating.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card viz-card">
+                            <div class="card-header">Clusters: Spend vs Recency</div>
+                            <div class="card-body text-center">
+                                <img src="visualizations/clusters_spend_vs_recency.png" alt="Clusters: Spend vs Recency" class="img-fluid">
+                                <p class="mt-3">Customer clusters based on total spend and days since last purchase.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">Cluster Statistics</div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Cluster</th>
+                                                <th>Avg. Age</th>
+                                                <th>Avg. Spend</th>
+                                                <th>Avg. Items</th>
+                                                <th>Avg. Rating</th>
+                                                <th>Avg. Days Since Purchase</th>
+                                                <th>Customer Count</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>36.71</td>
+                                                <td>$446.89</td>
+                                                <td>7.57</td>
+                                                <td>3.19</td>
+                                                <td>22.76</td>
+                                                <td>58</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>34.12</td>
+                                                <td>$805.49</td>
+                                                <td>11.68</td>
+                                                <td>4.17</td>
+                                                <td>15.27</td>
+                                                <td>59</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>29.12</td>
+                                                <td>$1,459.77</td>
+                                                <td>20.00</td>
+                                                <td>4.81</td>
+                                                <td>11.17</td>
+                                                <td>58</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>26.79</td>
+                                                <td>$703.69</td>
+                                                <td>12.21</td>
+                                                <td>3.95</td>
+                                                <td>53.18</td>
+                                                <td>34</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>42.02</td>
+                                                <td>$499.88</td>
+                                                <td>9.41</td>
+                                                <td>3.46</td>
+                                                <td>40.47</td>
+                                                <td>58</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">Business Recommendations</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Targeted Marketing</h5>
+                                        <p class="card-text">Develop personalized strategies for different customer segments: reward Champions, re-engage At Risk customers, and convert Loyal Customers to Champions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Membership Program</h5>
+                                        <p class="card-text">Optimize the membership program to encourage upgrades from Bronze to Silver and Silver to Gold tiers, given the significant spending differences.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Geographic Focus</h5>
+                                        <p class="card-text">Allocate more marketing resources to high-performing cities while developing strategies to improve performance in underperforming regions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer mt-5">
+        <div class="container text-center">
+            <p>E-commerce Customer Behavior Analysis Dashboard | <a href="https://github.com/keerthika-art/E-commerce-Analysis" class="text-white">GitHub Repository</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
