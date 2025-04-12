@@ -1,5 +1,7 @@
 # E-commerce Customer Behavior Analysis
 
+[View Live Dashboard](https://keerthika-art.github.io/E-commerce-Analysis/)
+
 ## Project Overview
 
 This project analyzes customer behavior patterns in an e-commerce platform using a comprehensive dataset of customer interactions and transactions. The analysis provides insights into customer spending habits, segmentation, satisfaction levels, and demographic patterns to help businesses make data-driven decisions.
